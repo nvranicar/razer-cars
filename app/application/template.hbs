@@ -1,0 +1,22 @@
+{{#bulma-nav isPrimary=true}}
+  {{#bulma-container}}
+    {{#bulma-nav-left}}
+      <div class="nav-item">
+        <h2>Razer Cars</h2>
+      </div>
+    {{/bulma-nav-left}}
+    {{#bulma-nav-right}}
+        <div class="nav-item">
+          <h3>
+            <span>
+              {{#link-to "index"}}Home{{/link-to}}
+              {{!-- {{#link-to "manufacturer"}}All Manufacturers{{/link-to}}
+              {{#link-to "new-manufacturer"}}Add Manufacturer{{/link-to}} --}}
+            </span>
+          </h3>
+        </div>
+    {{/bulma-nav-right}}
+  {{/bulma-container}}
+{{/bulma-nav}}
+
+{{outlet}}
