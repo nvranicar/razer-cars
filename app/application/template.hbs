@@ -1,22 +1,29 @@
-{{#bs-navbar as |navbar|}}
+<div class="navbar">
   <div class="container">
-    <div class="navbar-header">
-      {{#link-to "index"}}Razer Cars{{/link-to}}
+    <div class="nav">
+      <div class="nav__left">
+        <h2>
+          {{#link-to "index"}}Razer Cars{{/link-to}}
+        </h2>
+      </div>
+      <div class="nav__right">
+        <h3 class="nav-buttons">
+          {{#link-to "index"}}
+            Home
+          {{/link-to}}
+          {{#link-to "index"}}
+            All Manufacturers
+          {{/link-to}}
+          {{#link-to "index"}}
+            Add Manufacturer
+          {{/link-to}}
+        </h3>
+      </div>
     </div>
-    {{#navbar.content}}
-      {{#navbar.nav as |nav|}}
-        {{#nav.item}}
-          {{#nav.link-to "index"}}Home{{/nav.link-to}}
-        {{/nav.item}}
-        {{#nav.item}}
-          {{#nav.link-to "index"}}All Manufacturers{{/nav.link-to}}
-        {{/nav.item}}
-        {{#nav.item}}
-          {{#nav.link-to "index"}}Add Manufacturer{{/nav.link-to}}
-        {{/nav.item}}
-      {{/navbar.nav}}
-    {{/navbar.content}}
   </div>
-{{/bs-navbar}}
-
-{{outlet}}
+</div>
+<div class="section">
+  <div class="container">
+    {{outlet}}
+  </div>
+</div>

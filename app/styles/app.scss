@@ -1,4 +1,31 @@
-@import "ember-bootstrap/bootstrap";
+$c-blue: #0085ff;
+$c-white: #fafafa;
+$c-grey: rgba(#000,.25);
+$c-light: rgba(#000,.08);
+$c-orange: #ffb800;
+
+body {
+  margin: 0;
+}
+
+ul {
+  padding-left: none;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
 .section {
   padding: 1rem;
@@ -9,9 +36,45 @@
   max-width: 65rem;
 }
 
-.nav {
-  float: right;
+.navbar {
+  background: $c-blue;
+  padding: 0.5rem;
+  color: $c-white;
 }
 
-.navbar-header {
+.nav {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.nav-buttons {
+  > * + * {
+    margin-left: 0.5rem;
+  }
+}
+
+.card {
+  border: $c-grey solid 0.1rem;
+  border-radius: 0.2rem;
+  padding: 1rem;
+
+  &__header {
+    background: $c-light;
+    margin: -1rem;
+    padding: 0.05rem 1rem;
+    border-bottom: $c-grey solid 0.1rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+button {
+  border: none;
+  padding: 0.5rem;
+  font-size: 1rem;
+  color: $c-white;
+}
+
+.orange {
+  background: $c-orange;
 }
