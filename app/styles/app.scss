@@ -1,11 +1,17 @@
+@import "ember-bootstrap/bootstrap";
 
-$primary: #0084f0;
-$info: #ffa800;
+.section {
+  padding: 1rem;
+}
 
-$radius: 0.1rem;
+.container {
+  margin: 0 auto;
+  max-width: 65rem;
+}
 
-@import "bulma";
+.nav {
+  float: right;
+}
 
-body {
-  background: #000;
+.navbar-header {
 }
