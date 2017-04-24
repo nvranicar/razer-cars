@@ -3,6 +3,7 @@ $c-white: #fafafa;
 $c-grey: rgba(#000,.25);
 $c-light: rgba(#000,.08);
 $c-orange: #ffb800;
+$c-black: #292B2C;
 
 body {
   margin: 0;
@@ -58,13 +59,16 @@ a {
   border: $c-grey solid 0.1rem;
   border-radius: 0.2rem;
   padding: 1rem;
+  margin-bottom: 0;
+  margin-top: 0.5rem;
 
   &__header {
     background: $c-light;
     margin: -1rem;
     padding: 0.05rem 1rem;
     border-bottom: $c-grey solid 0.1rem;
-    margin-bottom: 0.5rem;
+    min-height: 3rem;
+    margin-bottom: 0.8rem;
   }
 }
 
@@ -75,6 +79,58 @@ button {
   color: $c-white;
 }
 
+.button {
+  border: none;
+  padding: 0.5rem;
+  font-size: 1rem;
+  color: $c-white;
+}
+
 .orange {
   background: $c-orange;
+}
+
+.blue {
+  background: $c-blue;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th {
+  text-align: left;
+  background: $c-black;
+  color: $c-white;
+}
+
+td, th {
+  padding: 0.5rem;
+}
+
+.link {
+  color: $c-blue;
+}
+
+tr:nth-child(even) {
+  background: $c-light;
+}
+
+input {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.form-body {
+  margin-bottom: 1.5rem;
+}
+
+.form-footer {
+  margin: -1rem;
+  background: $c-light;
+  padding: 1rem;
+  border-top: $c-grey solid 0.1rem;
 }
