@@ -5,17 +5,17 @@
   <div class="card__body">
     <table>
       <tr>
-          <th>Manufacturer</th>
-          <th>Country</th>
-          <th>Number of Models</th>
-          <th></th>
+        <th>Manufacturer</th>
+        <th>Country</th>
+        <th>Number of Models</th>
+        <th></th>
       </tr>
       {{#each model as |manufacturer|}}
         <tr>
           <td>{{manufacturer.name}}</td>
           <td>{{manufacturer.country}}</td>
           <td>{{manufacturer.cars.length}}</td>
-          {{!-- <td>{{#link-to "brands.new" class="link"}}See more{{/link-to}}</td> --}}
+          <td>{{#link-to "brands.car" manufacturer class="link"}}See more{{/link-to}}</td>
         </tr>
       {{/each}}
     </table>

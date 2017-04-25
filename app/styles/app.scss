@@ -4,6 +4,7 @@ $c-grey: rgba(#000,.25);
 $c-light: rgba(#000,.08);
 $c-orange: #ffb800;
 $c-black: #292B2C;
+$c-red: #da2626;
 
 body {
   margin: 0;
@@ -70,6 +71,10 @@ a {
     min-height: 3rem;
     margin-bottom: 0.8rem;
   }
+
+  &__body {
+    padding: 0.5rem;
+  }
 }
 
 button {
@@ -84,6 +89,10 @@ button {
   padding: 0.5rem;
   font-size: 1rem;
   color: $c-white;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .orange {
@@ -92,6 +101,10 @@ button {
 
 .blue {
   background: $c-blue;
+}
+
+.red {
+  background: $c-red;
 }
 
 table {
@@ -126,11 +139,29 @@ input {
 
 .form-body {
   margin-bottom: 1.5rem;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
 }
 
 .form-footer {
-  margin: -1rem;
+  margin: -1.5rem;
+  margin-top: 1rem;
   background: $c-light;
   padding: 1rem;
   border-top: $c-grey solid 0.1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: -1rem;
+  margin-top: 1rem;
+
+  &__item {
+    flex-basis: calc(33% - 2rem);
+    margin: 1rem;
+  }
 }

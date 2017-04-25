@@ -1,0 +1,27 @@
+<div class="card">
+  <div class="card__header">
+      <h1>{{model.name}}</h1>
+  </div>
+  <div class="card__body">
+    {{#link-to "brands.car.new" class="button orange new-car"}}Add New Car{{/link-to}}
+  </div>
+</div>
+<div class="grid">
+  {{#each model.cars as |car|}}
+    <div class="grid__item">
+      <div class="card">
+        <div class="card__header">
+          <h3>{{car.year}} - {{car.name}}</h3>
+        </div>
+        <div class="card__body">
+          <p>Horsepower: {{car.hp}}</p>
+          <p>Price: ${{car.price}}</p>
+          <div class="form-footer">
+            {{#link-to "brands.car.edit" car class="button blue"}}Edit{{/link-to}}
+            <button {{action "delete" car}} class="button red">Delete</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  {{/each}}
+</div>

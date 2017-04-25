@@ -1,0 +1,17 @@
+<div class="card">
+  <div class="card__header">
+    <h1>Edit Car Info</h1>
+  </div>
+  <form {{action "save" formValues on="submit"}} class="card__body">
+    <div class="form-body">
+      {{input value=formValues.name placeholder="Model Name"}}
+      {{input value=formValues.year placeholder="Year"}}
+      {{input value=formValues.hp placeholder="Horsepower"}}
+      {{input value=formValues.price placeholder="Price"}}
+    </div>
+    <div class="form-footer">
+      {{#link-to "brands.car" model class="button blue"}}Back{{/link-to}}
+      <button type="submit" class="orange">Submit</button>
+    </div>
+  </form>
+</div>
