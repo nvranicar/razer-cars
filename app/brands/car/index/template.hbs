@@ -4,6 +4,7 @@
   </div>
   <div class="card__body">
     {{#link-to "brands.car.new" class="button orange new-car"}}Add New Car{{/link-to}}
+    {{#link-to "brands.edit" model class="button blue"}}Edit{{/link-to}}
   </div>
 </div>
 <div class="grid">
@@ -17,7 +18,6 @@
           <p>Horsepower: {{car.hp}}</p>
           <p>Price: ${{car.price}}</p>
           <div class="form-footer">
-            {{#link-to "brands.car.edit" car class="button blue"}}Edit{{/link-to}}
             <button {{action "delete" car}} class="button red">Delete</button>
           </div>
         </div>
