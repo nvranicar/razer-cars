@@ -4,8 +4,8 @@
   </div>
   <form {{action "save" formValues on="submit"}} class="card__body">
     <div class="form-body">
-      {{input value=formValues.name placeholder="Company Name"}}
-      {{input value=formValues.code placeholder="ISO Country Code"}}
+      {{input value=model.name placeholder="Company Name"}}
+      {{input value=model.country placeholder="ISO Country Code"}}
     </div>
     <div class="form-footer">
       {{#link-to "brands.car.index" model class="button blue"}}Back{{/link-to}}

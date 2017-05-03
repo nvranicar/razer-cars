@@ -4,11 +4,8 @@ export default Ember.Controller.extend({
   formValues: {},
 
   actions: {
-    save(formValues) {
-      this.store.findRecord('brand', this.model.id).then((brand) => {
-        brand.set('name', formValues.name);
-        brand.set('country', formValues.code);
-      });
+    save() {
+      this.model.save();
       Ember.set(this, 'formValues', {});
       this.transitionToRoute('brands.car', this.model.id);
     }
