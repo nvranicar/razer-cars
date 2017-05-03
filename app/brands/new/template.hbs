@@ -1,0 +1,15 @@
+<div class="card">
+  <div class="card__header">
+    <h1>Add New Manufacturer</h1>
+  </div>
+  <form {{action "save" formValues on="submit"}} class="card__body">
+    <div class="form-body">
+      {{input value=formValues.name placeholder="Company Name"}}
+      {{input value=formValues.code placeholder="ISO Country Code"}}
+    </div>
+    <div class="form-footer">
+      {{#link-to "index" class="button blue"}}Back{{/link-to}}
+      <button type="submit" class="orange">Submit</button>
+    </div>
+  </form>
+</div>

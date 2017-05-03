@@ -1,0 +1,167 @@
+$c-blue: #0085ff;
+$c-white: #fafafa;
+$c-grey: rgba(#000,.25);
+$c-light: rgba(#000,.08);
+$c-orange: #ffb800;
+$c-black: #292B2C;
+$c-red: #da2626;
+
+body {
+  margin: 0;
+}
+
+ul {
+  padding-left: none;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.section {
+  padding: 1rem;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 65rem;
+}
+
+.navbar {
+  background: $c-blue;
+  padding: 0.5rem;
+  color: $c-white;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.nav-buttons {
+  > * + * {
+    margin-left: 0.5rem;
+  }
+}
+
+.card {
+  border: $c-grey solid 0.1rem;
+  border-radius: 0.2rem;
+  padding: 1rem;
+  margin-bottom: 0;
+  margin-top: 0.5rem;
+
+  &__header {
+    background: $c-light;
+    margin: -1rem;
+    padding: 0.05rem 1rem;
+    border-bottom: $c-grey solid 0.1rem;
+    min-height: 3rem;
+    margin-bottom: 0.8rem;
+  }
+
+  &__body {
+    padding: 0.5rem;
+  }
+}
+
+button {
+  border: none;
+  padding: 0.5rem;
+  font-size: 1rem;
+  color: $c-white;
+}
+
+.button {
+  border: none;
+  padding: 0.5rem;
+  font-size: 1rem;
+  color: $c-white;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.orange {
+  background: $c-orange;
+}
+
+.blue {
+  background: $c-blue;
+}
+
+.red {
+  background: $c-red;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th {
+  text-align: left;
+  background: $c-black;
+  color: $c-white;
+}
+
+td, th {
+  padding: 0.5rem;
+}
+
+.link {
+  color: $c-blue;
+}
+
+tr:nth-child(even) {
+  background: $c-light;
+}
+
+input {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.form-body {
+  margin-bottom: 1.5rem;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+}
+
+.form-footer {
+  margin: -1.5rem;
+  margin-top: 1rem;
+  background: $c-light;
+  padding: 1rem;
+  border-top: $c-grey solid 0.1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: -1rem;
+  margin-top: 1rem;
+
+  &__item {
+    flex-basis: calc(33% - 2rem);
+    margin: 1rem;
+  }
+}

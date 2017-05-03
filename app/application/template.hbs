@@ -1,0 +1,29 @@
+<div class="navbar">
+  <div class="container">
+    <div class="nav">
+      <div class="nav__left">
+        <h2>
+          {{#link-to "index"}}Razer Cars{{/link-to}}
+        </h2>
+      </div>
+      <div class="nav__right">
+        <h3 class="nav-buttons">
+          {{#link-to "index"}}
+            Home
+          {{/link-to}}
+          {{#link-to "brands"}}
+            All Manufacturers
+          {{/link-to}}
+          {{#link-to "brands.new"}}
+            Add Manufacturer
+          {{/link-to}}
+        </h3>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section">
+  <div class="container">
+    {{outlet}}
+  </div>
+</div>
